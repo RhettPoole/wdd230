@@ -44,8 +44,13 @@
     </main>
     <footer> <!-- Need to update below first <p> with copyright symbol and current year where the year 
       will be dynamically populated using javascript code. -->
-      <p>Rhett Poole</p>
+      <p id="copyright">Rhett Poole, United States</p>
       <p id="lastModified"></p>
     </footer>
+    <script>
+      const copyrightElement = document.getElementById('copyright');
+      const currentYear = new Date().getFullYear();
+      copyrightElement.innerHTML = `&copy; ${currentYear} Rhett Poole`;
+    </script>
   </body>
 </html>
