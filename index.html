@@ -7,13 +7,16 @@
       name="description"
       content="WDD 230 - Web Frontend Development, Rhett Poole, Course Assignment Portal"
     />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta name="author" content="Rhett Poole" />
     <title>Rhett Poole - WDD 230 - Web Frontend Development</title>
-    <img src="images/rhett-poole.jpg" alt="Rhett Poole" /> <!--- still need to upload a photo here. Current code is only a placeholder. --->
-    <h1>Hello World</h1>
   </head>
   <body>
     <header>
+      <img src="images/self-portrait.jpg" alt="Rhett Poole" id="portrait" />
       <h1>Rhett Poole</h1>
     </header>
     <nav>
@@ -21,36 +24,43 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
         <li><a href="chamber/">Chamber</a></li>
-        <li><a href="https://www.byui.edu/?utm_source=gmb&utm_medium=yext&y_source=1_MTAxMzI5NDk4MS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D">BYU-Idaho</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/3?lang=eng">Scripture - Exodus 3: 11-15</a></li>
+        <li>
+          <a
+            href="https://www.byui.edu/?utm_source=gmb&utm_medium=yext&y_source=1_MTAxMzI5NDk4MS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+            >BYU-Idaho</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/3?lang=eng"
+            >Scripture - Exodus 3: 11-15</a
+          >
+        </li>
       </ul>
     </nav>
     <main>
       <h2>WDD 230: Web Frontend Development</h2>
-      <section attribute="card">
+      <section class="card">
         <h3>Learning Activites</h3>
-        <ul> <!--- Below are placeholders, will be populated later in the semester. -->
-          <li><a href="">Placeholder</a></li>
-          <li><a href="">Placeholder</a></li>
-          <li><a href="">Placeholder</a></li>
+        <ul>
+          <!--- Below are placeholders, will be populated later in the semester. -->
+          <li>01: <a href="">Placeholder</a> | <a href=""> Placeholder</a></li>
+          <li>02: <a href="">Placeholder</a> | <a href=""> Placeholder</a></li>
+          <li>03: <a href="">Placeholder</a> | <a href=""> Placeholder</a></li>
         </ul>
       </section>
-      <section>
+      <section class="card">
         <h3>Information</h3>
-        <p> <!--- Below are placeholders, will be populated later in the semester. -->
-          Info Placeholder for weather, num of visits, ect.
-        </p>
+        <p>Idaho, United States of America</p>
+        <p>Weather</p>
+        <p>Page Visits:</p>
       </section>
     </main>
-    <footer> <!-- Need to update below first <p> with copyright symbol and current year where the year 
-      will be dynamically populated using javascript code. -->
-      <p id="copyright">Rhett Poole, United States</p>
-      <p id="lastModified"></p>
+    <footer>
+      <p id="copyright"></p>
+      <p>United States of America</p>
+      <p id="lastModified">Last Modification:</p>
     </footer>
-    <script>
-      const copyrightElement = document.getElementById('copyright');
-      const currentYear = new Date().getFullYear();
-      copyrightElement.innerHTML = `&copy; ${currentYear} Rhett Poole`;
-    </script>
+    <script src="scripts/getdates.js"></script>
   </body>
 </html>
