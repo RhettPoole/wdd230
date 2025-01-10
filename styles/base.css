@@ -47,7 +47,7 @@ nav ul {
 
 nav ul li {
   padding: 10px;
-  margin-right: 0 auto;
+  margin-right: 0;
 }
 
 nav ul li a {
@@ -65,7 +65,6 @@ main {
     grid-template-columns: 1fr; /* Single column layout */
     gap: 1rem; /* Spacing between sections */
     max-width: 800px;
-    min-width: none;
     margin: 0 auto;
     padding: 1rem;
   }
@@ -137,4 +136,8 @@ footer p {
 .card p {
   text-align: center;
   padding: 1rem;
+}
+
+#lastModified {
+  color: yellowgreen;
 }
