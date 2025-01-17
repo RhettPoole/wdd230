@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  font-family: "roboto", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #246337;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1, header h2 {
+  display: block;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem; /* Spacing between sections */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main h2 {
+  text-align: center;
+  margin: 1rem auto;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  max-width: 80%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 2rem); /* Default width to fit three cards in a row */
+  margin: 1rem;
+  max-width: 400px;
+  background: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 0;
+  border:#333 outset 5px;
+}
+
+
+
+.card img {
+    height: auto;
+    width: 90%;
+    border: #333;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+.card h3 {
+  text-align: left;
+  background-color: #246337;
+  color: white;
+  padding: 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card p, a, img {
+  text-align: left;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 37.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card:nth-child(3) {
+        grid-column: span 1;
+    }
+}
