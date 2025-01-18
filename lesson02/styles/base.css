@@ -29,6 +29,37 @@ header h1, header h2 {
   padding: 0.5rem 0;
 }
 
+nav {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: larger;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column; /* Vertical layout for mobile view */
+  list-style-type: none;
+  align-items: center; /* Center the links in mobile view */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
 main {
   flex: 1;
   display: grid;
@@ -57,7 +88,7 @@ main h2 {
 .card {
   flex: 1 1 calc(33.333% - 2rem); /* Default width to fit three cards in a row */
   margin: 1rem;
-  max-width: 400px;
+  max-width: 500px;
   background: white;
   border-radius: 8px;
   box-sizing: border-box;
@@ -79,10 +110,12 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: auto; /* Pushes the footer to the bottom */
+  grid-column: span 1;
 }
 
 footer p {
   margin: 0.5rem 0;
+  display: inline-flex;
 }
 
 .card h3 {
@@ -90,8 +123,7 @@ footer p {
   background-color: #246337;
   color: white;
   padding: 1rem;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  margin: 0;
 }
 
 .card p, a, img {
@@ -99,22 +131,59 @@ footer p {
   padding: 1rem;
 }
 
-@media only screen and (min-width: 37.5em) {
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
+#lastModified {
+  color: yellowgreen;
+}
 
-    .card:nth-child(3) {
-        grid-column: span 2;
-    }
+@media only screen and (min-width: 37.5em) {
+  main {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .card:nth-child(3) {
+      grid-column: span 2;
+  }
+
+  footer {
+      grid-column: span 2; /* Span 2 columns on medium screens */
+  }
 }
 
 @media only screen and (min-width: 60em) {
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  main {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
 
-    .card:nth-child(3) {
-        grid-column: span 1;
-    }
+  .card:nth-child(3) {
+      grid-column: span 1;
+  }
+
+  footer {
+      grid-column: span 3; /* Span 3 columns on large screens */
+  }
+}
+
+/* Media Query for larger views */
+@media screen and (min-width: 500px) {
+  header {
+    background-color: #246337;
+    color: white;
+  }
+
+  nav ul {
+    flex-direction: row; /* Horizontal layout for larger views */
+    justify-content: center; /* Center the navigation links */
+  }
+
+  nav ul li {
+    padding: 10px 20px; /* Add more padding for horizontal layout */
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr; /* Two columns layout for larger views */
+  }
+
+  main h2 {
+      grid-column: span 2;
+  }
 }

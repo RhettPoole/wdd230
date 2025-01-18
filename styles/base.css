@@ -87,6 +87,7 @@ main h2 {
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
 }
 
 .card li {
@@ -103,6 +104,7 @@ footer {
 
 footer p {
   margin: 0.5rem 0;
+  display: inline-flex;
 }
 
 .card ul {
@@ -127,6 +129,11 @@ footer p {
   padding: 0.5rem;
 }
 
+/* Expand the card when hovering over list items */
+.card ul li:hover .card {
+  transform: scale(1.05);
+}
+
 .card h3 {
   text-align: center;
   background-color: #b92424;
@@ -144,4 +151,32 @@ footer p {
 
 #lastModified {
   color: yellowgreen;
+}
+
+@media only screen and (min-width: 37.5em) {
+  main {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .card:nth-child(3) {
+      grid-column: span 2;
+  }
+
+  footer {
+      grid-column: span 2; /* Span 2 columns on medium screens */
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  main {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card:nth-child(3) {
+      grid-column: span 1;
+  }
+
+  footer {
+      grid-column: span 3; /* Span 3 columns on large screens */
+  }
 }
