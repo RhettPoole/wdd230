@@ -32,6 +32,33 @@ header h1 {
   font-size: 2rem;
 }
 
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+	content: "✖";
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.hide {
+  display: none;
+}
+
 nav {
   background-color: #333;
   color: white;
@@ -57,13 +84,27 @@ nav ul li a {
   color: white;
   text-decoration: none;
   padding: 0.5rem;
+  position: relative;
 }
 
 nav ul li a:hover {
   background-color: #555;
 }
 
-main {
+.navigation a.current::after, .navigation a:hover::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color:white;
+  margin-top: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+  
+  main {
   display: grid;
   grid-template-columns: 1fr; /* Single column layout */
   gap: 1rem; /* Spacing between sections */
@@ -165,6 +206,20 @@ footer p {
   footer {
       grid-column: span 2; /* Span 2 columns on medium screens */
   }
+
+  #menu {
+    display: none; /* hide hamburger button */
+  }
+
+  .hide {
+    display: flex;
+  }
+
+  .hometown iframe {
+    width: 100%; /* Make the iframe span the full width of its container */
+    height: 450px; /* Set a fixed height or adjust as needed */
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -179,4 +234,13 @@ footer p {
   footer {
       grid-column: span 3; /* Span 3 columns on large screens */
   }
+
+  #menu {
+    display: none; /* hide hamburger button */
+  }
+}
+
+.hometown iframe{
+  width: 100%;
+  height: auto;
 }
