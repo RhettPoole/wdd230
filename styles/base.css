@@ -1,6 +1,3 @@
-/* Base styles (Mobile view) */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -118,17 +115,20 @@ main h2 {
   margin: 1rem auto;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  max-width: 80%;
+  max-width: fit-content;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
-  max-width: 800px;
-  margin: 1rem auto;
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: 500px;
+  margin: 1rem;
   background: white;
+  box-sizing: border-box;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
+  padding: 0;
 }
 
 .card li {
@@ -194,13 +194,22 @@ footer p {
   color: yellowgreen;
 }
 
+.hometown iframe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center horizontally */
+  width: 100%; /* Adjust width as needed */
+  height: 300px; /* Maintain height */
+}
+
 @media only screen and (min-width: 37.5em) {
-  main {
-      grid-template-columns: 1fr 1fr;
+main {
+    grid-template-columns: 1fr 2fr;
   }
 
-  .card:nth-child(3) {
-      grid-column: span 2;
+ .card:nth-child(1) {
+      grid-column: 1/2;
   }
 
   footer {
@@ -215,32 +224,32 @@ footer p {
     display: flex;
   }
 
-  .hometown iframe {
+  .hometown iframe{
     width: 100%; /* Make the iframe span the full width of its container */
-    height: 450px; /* Set a fixed height or adjust as needed */
+    height: 100%; /* Span full height of container as well. */
+  }
+
+  .hometown {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center horizontally */
+  width: 200%; /* Adjust width as needed */
+  height: 300px; /* Maintain height */
   }
 
 }
 
 @media only screen and (min-width: 60em) {
   main {
-      grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .card:nth-child(3) {
-      grid-column: span 1;
-  }
-
-  footer {
-      grid-column: span 3; /* Span 3 columns on large screens */
-  }
-
-  #menu {
-    display: none; /* hide hamburger button */
-  }
+    grid-template-columns: 1fr 2fr;
 }
 
-.hometown iframe{
-  width: 100%;
-  height: auto;
+footer {
+    grid-column: 2 / 3; /* Span 3 columns on large screens */
+}
+
+#menu {
+  display: none; /* hide hamburger button */
+}
 }
