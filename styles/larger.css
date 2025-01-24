@@ -1,7 +1,7 @@
 /* Media Query for larger views */
 @media screen and (min-width: 500px) {
     header {
-      background-color: #b92424;
+      background-color: blue;
       color: white;
     }
   
