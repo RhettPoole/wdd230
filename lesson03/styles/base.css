@@ -65,7 +65,7 @@ ul h2 {
 ul p,
 ul li {
   margin-bottom: 0.5rem;
-  color: #404854; /* Dark Gray color for list items */
+  color: #000; /* Dark Gray color for list items */
 }
 
 ul img {
