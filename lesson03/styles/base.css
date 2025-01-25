@@ -1,0 +1,103 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Ubuntu";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #dcccbb; /* Beige background for the body */
+}
+
+header {
+  color: white;
+  background-color: #003c5f; /* Dark Blue background for the header */
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+header img {
+  background-color: white;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #dcccbb; /* Beige color for the header text */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+main h2 {
+  text-align: center;
+  margin: 1rem 0;
+  color: #003c5f; /* Dark Blue color for main headings */
+}
+
+ul {
+  list-style-type: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #8d98a7; /* Light Gray background for lists */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+ul h2 {
+  margin-bottom: 0.5rem;
+  color: #003c5f; /* Dark Blue color for list headings */
+}
+
+ul p,
+ul li {
+  margin-bottom: 0.5rem;
+  color: #404854; /* Dark Gray color for list items */
+}
+
+ul img {
+  display: block;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.wireframes {
+    display: flex;
+    justify-content: space-between;
+    background-color: #404854; /* Dark Gray background for wireframes */
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .wireframes img {
+    width: 48%; /* Adjust width to fit two images side by side */
+    height: auto;
+    border-radius: 8px;
+  }
+  
