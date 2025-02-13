@@ -170,6 +170,17 @@ main {
     border-radius: 5px;
 }
 
+/* Hide action button and hero image on small screens */
+@media (max-width: 600px) {
+    #action {
+        display: none;
+    }
+
+    #hero {
+        display: none;
+    }
+}
+
 #welcome {
     grid-column: 1 / span 2; /* Span two columns */
 }
