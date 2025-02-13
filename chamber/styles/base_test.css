@@ -189,11 +189,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #003c5f;
-}
-
-.card h2, .card h3 {
-    color: #003c5f;
 }
 
 /* Card list styling */
