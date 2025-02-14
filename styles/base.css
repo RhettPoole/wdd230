@@ -98,8 +98,22 @@ nav ul li a:hover {
   left: 0;
   z-index: 1;
 }
-  
-  main {
+
+.hero-container {
+  grid-column: -1/1;
+  position: relative;
+  max-width: 750px;
+}
+
+.hero-label {
+  display: none; /* Hide the hero label by default (on small screens) */
+}
+
+#hero {
+  max-width: 750px;
+}
+
+main {
   display: grid;
   grid-template-columns: 1fr; /* Single column layout */
   gap: 1rem; /* Spacing between sections */
@@ -199,6 +213,35 @@ footer p {
   margin: 0 auto; /* Center horizontally */
   width: 100%; /* Adjust width as needed */
   height: 300px; /* Maintain height */
+}
+
+@media (max-width: 600px) {
+  #hero, .hero-label {
+    display: none; /* hide the hero img and lebelon small screens */
+  }
+
+  #hero_small {
+    display: block; /* show the small hero img on small screens */
+    max-width: 350px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 601px) {
+    #hero_small {
+      display: none; /* hide the small hero img on larger screens */
+    }
+
+    .hero-label {
+      display: block; /* Show the hero label on larger screens */
+      position: absolute;
+      top: 10px; /* Adjust as needed */
+      left: 10px; /* Adjust as needed */
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
 }
 
 @media only screen and (min-width: 37.5em) {
