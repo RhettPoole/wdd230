@@ -154,11 +154,49 @@ main {
 .hero-container {
     grid-column: 1 / -1; /* Span all three columns */
     position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: none; /* Hide by default */
 }
 
 #hero {
-    width: 100%; /* Ensure the hero image spans 100% of the screen width */
+    width: 100%;  /* Ensure the hero image spans 100% of the screen width */
     height: auto;
+}
+
+@media (min-width: 1024px) {
+    #overlay-large {
+        display: block; /* Show the large overlay text on large screens */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #overlay-medium {
+        display: block; /* Show the medium overlay text on medium screens */
+    }
+}
+
+@media (max-width: 767px) {
+    #overlay-small {
+        display: block; /* Show the small overlay text on small screens */
+    }
 }
 
 #action {
@@ -176,9 +214,9 @@ main {
         display: none;
     }
 
-    #hero {
+    /*#hero {
         display: none;
-    }
+    }*/
 }
 
 #welcome {

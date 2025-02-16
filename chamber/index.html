@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rhett Poole - BOM Activity">
     <meta name="author" content="Rhett Poole">
+    <meta property="og:title" content="Boise Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rhettpoole.github.io/wdd230/chamber/images/boise-logo.webp">
+    <meta property="og:url" content="https://rhettpoole.github.io/wdd230/chamber/index.html">
     <title>Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/base_test.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="icon" href="images/favicon.ico" />
 </head>
 <body>
     <header>
-        <img src="images/boise-logo.png" alt="Boise Chamber of Commerce Logo" id="head_logo">
+        <img src="images/boise-logo.webp" alt="Boise Chamber of Commerce Logo" id="head_logo">
+        <h1>Boise, Idaho - Chamber of Commerce</h1>
         <div class="toggle-container">
             <div id="mode">
                 🕶️
@@ -27,7 +35,15 @@
     </nav>
     <main>
         <div class="hero-container">
-            <img src="images/hero.PNG" alt="Boise Hero Image" id="hero">
+            <!-- <img src="images/hero.PNG" alt="Boise Hero Image" id="hero"> -->
+             <picture>
+                <source srcset="images/wdd230-org-large.webp" media="(min-width: 1024px)">
+                <source srcset="images/wdd230-org-medium.webp" media="(min-width: 768px)">
+                <img src="images/wdd230-org-small.webp" alt="Boise Hero Image" id="hero">
+            </picture>
+            <div class="overlay-text" id="overlay-large">large</div>
+            <div class="overlay-text" id="overlay-medium">medium</div>
+            <div class="overlay-text" id="overlay-small">small</div>
             <section id="action">
                 <a href="">Call to action placeholder link</a>
             </section>
@@ -40,6 +56,9 @@
         </section>
         <section id="weather" class="card">
             <h3>Weather - Placeholder Card</h3>
+            <p>Current Temperature: <span id="temperature">45</span>°F</p>
+            <p>Wind Speed: <span id="windSpeed">10</span> mph</p>
+            <p>Wind Chill: <span id="windChill">N/A</span></p>
         </section>
         <section id="current-events" class="card">
             <h3>Current Events - Placeholder Card</h3>
@@ -54,7 +73,7 @@
         </section>
     </main>
     <footer>
-        <img src="images/boise-logo.png" alt="Boise Chamber of Commerce Logo" id="footer_logo">
+        <img src="images/boise-logo.webp" alt="Boise Chamber of Commerce Logo" id="footer_logo">
         <p id="copyright"></p>
         <p>United States of America | WDD 230 BYU-Idaho |</p>
         <p id="lastModified">Last Modification:</p>
@@ -62,5 +81,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
