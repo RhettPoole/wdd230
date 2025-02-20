@@ -33,7 +33,7 @@
   <body>
     <header>
       <picture>
-      <img src="images/self-portrait.webp" alt="Rhett Poole" id="portrait">
+        <img src="images/self-portrait.webp" alt="Rhett Poole" id="portrait" />
       </picture>
       <h2>Rhett Poole</h2>
     </header>
@@ -60,10 +60,18 @@
     <main>
       <div class="hero-container">
         <picture>
-          <img src="images/mid_temple_large.webp" alt="mid temple photo" id="hero" />
+          <img
+            src="images/mid_temple_large.webp"
+            alt="mid temple photo"
+            id="hero"
+          />
         </picture>
-        <img src="images/mid_temple_small.webp" alt="mid temple photo" id="hero_small" />
-        <div class = "hero-label"><p>Meridian, Idaho Temple</p></div>
+        <img
+          src="images/mid_temple_small.webp"
+          alt="mid temple photo"
+          id="hero_small"
+        />
+        <div class="hero-label"><p>Meridian, Idaho Temple</p></div>
       </div>
       <h2>WDD 230: Web Frontend Development</h2>
       <section class="card">
@@ -88,24 +96,44 @@
               >Hamburger Codepen</a
             >
           </li>
-          <li>03: <a href="lesson03/chamber-site-plan.html">Boise Chamber of Commerce Site Plan</a> |
           <li>
-            04: <a href="https://codepen.io/Rhett-Poole/pen/raBoeMZ?editors=1100">🔒 CSS Pseudo-classes CodePen
-            </a> | <a href="chamber/index.html">Boise, Idaho Chamber of Commerce Home Page</a>
+            03:
+            <a href="lesson03/chamber-site-plan.html"
+              >Boise Chamber of Commerce Site Plan</a
+            >
+            |
+          </li>
+          <li>
+            04:
+            <a href="https://codepen.io/Rhett-Poole/pen/raBoeMZ?editors=1100"
+              >🔒 CSS Pseudo-classes CodePen
+            </a>
+            |
+            <a href="chamber/index.html"
+              >Boise, Idaho Chamber of Commerce Home Page</a
+            >
           </li>
           <li>05: <a href="lesson05/bom.html">BOM Activity</a></li>
           <li>06: <a href="images/landscape.webp">WebP</a></li>
-          <li>07: <a href="lesson06/lazyload.html">LazyLoad Activity</a></li>
+          <li>07: <a href="lesson06/lazyload.html">LazyLoad Activity</a> | <a href="chamber/discover.html">Chamber, Discover Page</a> </li>
         </ul>
       </section>
       <section id="information" class="card">
         <h3>Information</h3>
         <p>Idaho, United States of America</p>
-        <p>Weather</p>
-        <p>Page Visits:</p>
+        <p>Current Temperature: <span id="temperature">45</span>°F</p>
+            <p>Wind Speed: <span id="windSpeed">10</span> mph</p>
+            <p>Wind Chill: <span id="windChill">N/A</span></p>
+        <p id="vistMessage"></p>
       </section>
       <section class="hometown">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92456.62823483757!2d-116.312324209235!3d43.60092722383829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef172e947b49d%3A0x9a5b989b36679d9b!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1737602375259!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92456.62823483757!2d-116.312324209235!3d43.60092722383829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef172e947b49d%3A0x9a5b989b36679d9b!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1737602375259!5m2!1sen!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>
@@ -115,5 +143,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/visit.js"></script>
   </body>
 </html>

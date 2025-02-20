@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rhett Poole - BOM Activity">
+    <meta name="author" content="Rhett Poole">
+    <meta property="og:title" content="Boise Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rhettpoole.github.io/wdd230/chamber/images/boise-logo.webp">
+    <meta property="og:url" content="https://rhettpoole.github.io/wdd230/chamber/index.html">
+    <title>Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/boise-logo.webp" alt="Boise Chamber of Commerce Logo" id="head_logo">
+        <h1>Boise, Idaho - Chamber of Commerce</h1>
+        <div class="toggle-container">
+            <div id="mode">
+                🕶️
+            </div>
+        </div>
+    </header>
+    <nav>
+        <button id="menu">☰</button>
+        <ul class="navigation hide">
+            <li><a href="" >Nav</a></li>
+            <li><a href="" >Nav</a></li>
+            <li><a href="" >Nav</a></li>
+        </ul>
+    </nav>
+    <main class="grid-container">
+        <aside class="sidebar">
+            <h2>Sidebar Content</h2>
+            <p id="visitMessage"></p>
+            <p>Demographics, statistical data, events, attractions, and/or a calendar, etc.</p>
+        </aside>
+        <section class="main-content">
+            <h2>Local Photos of Interest</h2>
+            <div class="gallery">
+                <figure>
+                    <img data-src="images/discover1.webp" alt="Photo 1" class="lazy">
+                    <figcaption>Photo 1 Caption</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/discover2.webp" alt="Photo 2" class="lazy">
+                    <figcaption>Photo 2 Caption</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/discover3.webp" alt="Photo 3" class="lazy">
+                    <figcaption>Photo 3 Caption</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/discover4.webp" alt="Photo 4" class="lazy">
+                    <figcaption>Photo 4 Caption</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/discover5.webp" alt="Photo 5" class="lazy">
+                    <figcaption>Photo 5 Caption</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/discover6.webp" alt="Photo 6" class="lazy">
+                    <figcaption>Photo 6 Caption</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="images/boise-logo.webp" alt="Boise Chamber of Commerce Logo" id="footer_logo" width="100px">
+        <p id="copyright"></p>
+        <p>United States of America | WDD 230 BYU-Idaho |</p>
+        <p id="lastModified">Last Modification:</p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/visit.js"></script>
+</body>
+</html>
