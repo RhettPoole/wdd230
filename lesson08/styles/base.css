@@ -1,0 +1,45 @@
+/* Basic table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Caption styling */
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    caption-side: bottom;
+}
+
+/* Table headers */
+th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+th:nth-child(n+2) {
+    background-color: grey;
+}
+
+/* Table cells */
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Zebra striping using nth-child */
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Light gray for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+}
+
+/* Style for checkmarks and crosses */
+td {
+    font-size: 1.5em;
+}
