@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #003c5f;
+    --primary-color: white;
     --secondary-color: #404854;
     --background-color: #DCCCBB;
 }
@@ -21,7 +21,7 @@ main {
 }
 
 form {
-    background: white;
+    background: var(--primary-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
