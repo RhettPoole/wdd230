@@ -1,20 +1,22 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const visitMessage = document.getElementById("visitMessage");
-    const lastVisit = localStorage.getItem("lastVisit");
-    const currentVisit = Date.now();
+document.addEventListener("DOMContentLoaded", function () {
+  const currentVisit = Date.now();
 
-    if (!lastVisit) {
-        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
-    } else {
-        const daysBetween = Math.floor((currentVisit - lastVisit) / (1000 * 60 * 60 * 24));
-        if (daysBetween < 1) {
-            visitMessage.textContent = "Back so soon! Awesome!";
-        } else if (daysBetween === 1) {
-            visitMessage.textContent = "You last visited 1 day ago.";
-        } else {
-            visitMessage.textContent = `You last visited ${daysBetween} days ago.`;
-        }
-    }
+  localStorage.setItem("lastVisit", currentVisit);
 
-    localStorage.setItem("lastVisit", currentVisit);
+  // Check if 'pageVisits' exists in localStorage
+  if (localStorage.getItem("pageVisits")) {
+    // Increment the visit count
+    localStorage.setItem(
+      "pageVisits",
+      Number(localStorage.getItem("pageVisits")) + 1
+    );
+  } else {
+    // Initialize the visit count
+    localStorage.setItem("pageVisits", 1);
+  }
+
+  // Display the visit count
+  document.getElementById(
+    "visitMessage"
+  ).textContent = `Page Visits: ${localStorage.getItem("pageVisits")}`;
 });
