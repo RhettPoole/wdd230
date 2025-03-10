@@ -29,46 +29,15 @@
         <ul class="navigation hide">
             <li><a href="discover.html" >Discover Page</a></li>
             <li><a href="join.html" >Become a Member</a></li>
-            <li><a href="" >Nav</a></li>
+            <li><a href="directory.html">Directory</a></li>
         </ul>
     </nav>
     <main>
-        <div class="hero-container">
-             <picture>
-                <source srcset="images/wdd230-org-large.webp" media="(min-width: 1024px)">
-                <source srcset="images/wdd230-org-medium.webp" media="(min-width: 768px)">
-                <img src="images/wdd230-org-small.webp" alt="Boise Hero Image" id="hero">
-            </picture>
-            <div class="overlay-text" id="overlay-large">large</div>
-            <div class="overlay-text" id="overlay-medium">medium</div>
-            <div class="overlay-text" id="overlay-small">small</div>
-            <section id="action">
-                <a href="">Call to action placeholder link</a>
-            </section>
+        <div class="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
         </div>
-        <section id="welcome">
-            <h2>Welcome to Boise, Idaho's Chamber of Commerce!</h2>
-        </section>
-        <section id="scenarios" class="card">
-            <h3>Scenarios - Placeholder Card</h3>
-        </section>
-        <section id="weather" class="card">
-            <h3>Weather - Placeholder Card</h3>
-            <p>Current Temperature: <span id="temperature">45</span>°F</p>
-            <p>Wind Speed: <span id="windSpeed">10</span> mph</p>
-            <p>Wind Chill: <span id="windChill">N/A</span></p>
-        </section>
-        <section id="current-events" class="card">
-            <h3>Current Events - Placeholder Card</h3>
-            <ul>
-                <li>Current Event Placeholder</li>
-                <li>Current Event Placeholder</li>
-                <li>Current Event Placeholder</li>
-            </ul>
-        </section>
-        <section id="spotlight" class="card">
-            <h3>Card for Spotlight Advertisements</h3>
-        </section>
+        <div id="members-display" class="grid"></div>
     </main>
     <footer>
         <img src="images/boise-logo.webp" alt="Boise Chamber of Commerce Logo" id="footer_logo">
@@ -80,5 +49,6 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>

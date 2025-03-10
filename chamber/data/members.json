@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Company One",
+            "address": "123 Main St, Boise, ID 83701",
+            "phone": "208-555-1234",
+            "website": "https://www.companyone.com",
+            "image": "companyone.png",
+            "membershipLevel": "Gold",
+            "description": "Leading provider of tech solutions."
+        },
+        {
+            "name": "Company Two",
+            "address": "456 Elm St, Boise, ID 83702",
+            "phone": "208-555-5678",
+            "website": "https://www.companytwo.com",
+            "image": "companytwo.png",
+            "membershipLevel": "Silver",
+            "description": "Innovative marketing agency."
+        },
+        {
+            "name": "Company Three",
+            "address": "789 Oak St, Boise, ID 83703",
+            "phone": "208-555-9012",
+            "website": "https://www.companythree.com",
+            "image": "companythree.png",
+            "membershipLevel": "Bronze",
+            "description": "Top-notch financial services."
+        },
+        {
+            "name": "Company Four",
+            "address": "101 Pine St, Boise, ID 83704",
+            "phone": "208-555-3456",
+            "website": "https://www.companyfour.com",
+            "image": "companyfour.png",
+            "membershipLevel": "Gold",
+            "description": "Expert legal advice."
+        },
+        {
+            "name": "Company Five",
+            "address": "202 Maple St, Boise, ID 83705",
+            "phone": "208-555-7890",
+            "website": "https://www.companyfive.com",
+            "image": "companyfive.png",
+            "membershipLevel": "Silver",
+            "description": "High-quality construction services."
+        },
+        {
+            "name": "Company Six",
+            "address": "303 Birch St, Boise, ID 83706",
+            "phone": "208-555-2345",
+            "website": "https://www.companysix.com",
+            "image": "companysix.png",
+            "membershipLevel": "Bronze",
+            "description": "Reliable IT support."
+        },
+        {
+            "name": "Company Seven",
+            "address": "404 Cedar St, Boise, ID 83707",
+            "phone": "208-555-6789",
+            "website": "https://www.companyseven.com",
+            "image": "companyseven.png",
+            "membershipLevel": "Gold",
+            "description": "Creative design studio."
+        }
+    ]
+}
