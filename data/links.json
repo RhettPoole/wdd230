@@ -13,12 +13,16 @@
         "lesson": "02",
         "links": [
           {
-            "url": "lesson02/combinators-exercise.png",
+            "url": "images/combinators-exercise.PNG",
             "title": "Combinators Exercise"
           },
           {
             "url": "https://codepen.io/Rhett-Poole/pen/QwLZWpw",
             "title": "CSS Pseudo Elements"
+          },
+          {
+            "url": "https://codepen.io/Rhett-Poole/pen/NPKOWXP",
+            "title": "Hamburger Codepen"
           }
         ]
       },
@@ -26,8 +30,8 @@
         "lesson": "03",
         "links": [
           {
-            "url": "lesson03/activity1.html",
-            "title": "Activity 1"
+            "url": "lesson03/chamber-site-plan.html",
+            "title": "Boise Chamber of Commerce Site Plan"
           },
           {
             "url": "lesson03/activity2.html",
