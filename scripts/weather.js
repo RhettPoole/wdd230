@@ -4,9 +4,9 @@ const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
 // API URL with query parameters
-const lat = "49.7537"; // Latitude for Trier, Germany
-const lon = "6.6394"; // Longitude for Trier, Germany
-const apiKey = "843c937f1cba545b3e01493f05512f37"; // Replace with your actual API key
+const lat = "44.5002"; // Latitude for Boise, Idaho
+const lon = "-114.2512"; // Longitude for Boise, Idaho
+const apiKey = "843c937f1cba545b3e01493f05512f37"; // Boise API key
 const units = "imperial"; // Set units to imperial
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
