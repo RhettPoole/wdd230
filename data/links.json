@@ -32,10 +32,6 @@
           {
             "url": "lesson03/chamber-site-plan.html",
             "title": "Boise Chamber of Commerce Site Plan"
-          },
-          {
-            "url": "lesson03/activity2.html",
-            "title": "Activity 2"
           }
         ]
       },
@@ -43,12 +39,12 @@
         "lesson": "04",
         "links": [
           {
-            "url": "lesson04/activity1.html",
-            "title": "Activity 1"
+            "url": "https://codepen.io/Rhett-Poole/pen/raBoeMZ?editors=1100",
+            "title": "🔒 CSS Pseudo-classes CodePen"
           },
           {
-            "url": "lesson04/activity2.html",
-            "title": "Activity 2"
+            "url": "chamber/index.html",
+            "title": "Boise, Idaho Chamber of Commerce Home Page"
           }
         ]
       },
@@ -56,12 +52,8 @@
         "lesson": "05",
         "links": [
           {
-            "url": "lesson05/activity1.html",
-            "title": "Activity 1"
-          },
-          {
-            "url": "lesson05/activity2.html",
-            "title": "Activity 2"
+            "url": "lesson05/bom.html",
+            "title": "BOM Activity"
           }
         ]
       },
@@ -69,12 +61,8 @@
         "lesson": "06",
         "links": [
           {
-            "url": "lesson06/activity1.html",
-            "title": "Activity 1"
-          },
-          {
-            "url": "lesson06/activity2.html",
-            "title": "Activity 2"
+            "url": "images/landscape.webp",
+            "title": "WebP"
           }
         ]
       },
@@ -82,12 +70,12 @@
         "lesson": "07",
         "links": [
           {
-            "url": "lesson07/activity1.html",
-            "title": "Activity 1"
+            "url": "lesson06/lazyload.html",
+            "title": "LazyLoad Activity"
           },
           {
-            "url": "lesson07/activity2.html",
-            "title": "Activity 2"
+            "url": "chamber/discover.html",
+            "title": "Chamber, Discover Page"
           }
         ]
       },
@@ -95,12 +83,16 @@
         "lesson": "08",
         "links": [
           {
-            "url": "lesson08/activity1.html",
-            "title": "Activity 1"
+            "url": "lesson08/tablebuild.html",
+            "title": "Table Build"
           },
           {
-            "url": "lesson08/activity2.html",
-            "title": "Activity 2"
+            "url": "Form-start/index.html",
+            "title": "Form Video Activity"
+          },
+          {
+            "url": "form.html",
+            "title": "Student Form Build"
           }
         ]
       },
@@ -108,12 +100,8 @@
         "lesson": "09",
         "links": [
           {
-            "url": "lesson09/activity1.html",
-            "title": "Activity 1"
-          },
-          {
-            "url": "lesson09/activity2.html",
-            "title": "Activity 2"
+            "url": "lesson09/new-ward-members.json",
+            "title": "New Ward members JSON"
           }
         ]
       },
@@ -121,12 +109,8 @@
         "lesson": "10",
         "links": [
           {
-            "url": "lesson10/activity1.html",
-            "title": "Activity 1"
-          },
-          {
-            "url": "lesson10/activity2.html",
-            "title": "Activity 2"
+            "url": "lesson10/weather.html",
+            "title": "Consuming a Weather API"
           }
         ]
       }
