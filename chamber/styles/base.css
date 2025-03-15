@@ -11,6 +11,30 @@ body {
   background-color: #dcccbb;
   transition: background-color 0.3s, color 0.3s;
 }
+.banner {
+  display: none;
+  background-color: #ffcc00;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.banner p {
+  margin: 0;
+  display: inline;
+}
+
+.close-banner {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -449,6 +473,7 @@ footer p {
   font-size: 1.5rem;
 }
 
-.member p, .member a {
+.member p,
+.member a {
   margin: 0.5rem 0;
 }

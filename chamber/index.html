@@ -15,6 +15,10 @@
     <link rel="icon" href="images/favicon.ico" />
 </head>
 <body>
+    <div id="banner" class="banner">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+        <button id="close-banner" class="close-banner">❌</button>
+    </div>
     <header>
         <img src="images/boise-logo.webp" alt="Boise Chamber of Commerce Logo" id="head_logo">
         <h1>Boise, Idaho - Chamber of Commerce</h1>
@@ -34,16 +38,17 @@
     </nav>
     <main>
         <div class="hero-container">
-             <picture>
+             <!-- <picture>
                 <source srcset="images/wdd230-org-large.webp" media="(min-width: 1024px)">
                 <source srcset="images/wdd230-org-medium.webp" media="(min-width: 768px)">
                 <img src="images/wdd230-org-small.webp" alt="Boise Hero Image" id="hero">
             </picture>
             <div class="overlay-text" id="overlay-large">large</div>
             <div class="overlay-text" id="overlay-medium">medium</div>
-            <div class="overlay-text" id="overlay-small">small</div>
+            <div class="overlay-text" id="overlay-small">small</div> -->
+            <img src="images/hero.PNG" alt="Boise Hero Image" id="hero">
             <section id="action">
-                <a href="">Call to action placeholder link</a>
+                <a href="join.html">Join us!</a>
             </section>
         </div>
         <section id="welcome">
@@ -54,9 +59,16 @@
         </section>
         <section id="weather" class="card">
             <h3>Weather - Placeholder Card</h3>
-            <p>Current Temperature: <span id="temperature">45</span>°F</p>
-            <p>Wind Speed: <span id="windSpeed">10</span> mph</p>
-            <p>Wind Chill: <span id="windChill">N/A</span></p>
+            <p>The current temperature in Boise, Idaho is <span id="current-temp"></span> F</p>
+        <figure>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <figcaption></figcaption>
+        </figure>
+        <p>The forecast for the next three days temperature in Boise, Idaho is as follows: <span id="forecast-temp"></span></p>
+        <p>1: <span id="forecast-temp1">N/A</span>°F</p>
+        <p>2: <span id="forecast-temp2">N/A</span>°F</p>
+        <p>3: <span id="forecast-temp3">N/A</span>°F</p>
+            <!--<p>Wind Chill: <span id="windChill">N/A</span></p>-->
         </section>
         <section id="current-events" class="card">
             <h3>Current Events - Placeholder Card</h3>
@@ -79,6 +91,9 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
