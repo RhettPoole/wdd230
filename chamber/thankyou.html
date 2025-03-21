@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rhett Poole - Form Page">
-    <meta name="author" content="Rhett Poole">
-    <meta property="og:title" content="Boise Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://rhettpoole.github.io/wdd230/chamber/images/boise-logo.webp">
-    <meta property="og:url" content="https://rhettpoole.github.io/wdd230/chamber/index.html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rhett Poole - Form Page" />
+    <meta name="author" content="Rhett Poole" />
+    <meta property="og:title" content="Boise Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://rhettpoole.github.io/wdd230/chamber/images/boise-logo.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://rhettpoole.github.io/wdd230/chamber/index.html"
+    />
     <title>Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base.css" />
     <link rel="icon" href="images/favicon.ico" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="images/boise-logo.webp" alt="Boise Chamber of Commerce Logo" id="head_logo">
-        <h1>Boise, Idaho - Chamber of Commerce</h1>
-        <div class="toggle-container">
-            <div id="mode">
-                🕶️
-            </div>
-        </div>
+      <a href="https://rhettpoole.github.io/wdd230/chamber/index.html">
+        <img
+          src="images/boise-logo.webp"
+          alt="Boise Chamber of Commerce Logo"
+          id="head_logo"
+        />
+      </a>
+      <h1>Boise, Idaho - Chamber of Commerce</h1>
+      <div class="toggle-container">
+        <div id="mode">🕶️</div>
+      </div>
     </header>
     <nav>
-        <button id="menu">☰</button>
-        <ul class="navigation hide">
-            <li><a href="discover.html" >Discover Page</a></li>
-            <li><a href="join.html" >Become a Member</a></li>
-            <li><a href="directory.html" >Directory</a></li>
-        </ul>
+      <button id="menu">☰</button>
+      <ul class="navigation hide">
+        <li><a href="discover.html">Discover Page</a></li>
+        <li><a href="join.html">Become a Member</a></li>
+        <li><a href="directory.html">Directory</a></li>
+      </ul>
     </nav>
     <main>
-        <h1> Thank you for joining!! </h1>
-      
+      <h1>Thank you for joining!!</h1>
     </main>
     <footer>
-        <img src="images/boise-logo.webp" alt="Boise Chamber of Commerce Logo" id="footer_logo">
-        <p id="copyright"></p>
-        <p>United States of America | WDD 230 BYU-Idaho |</p>
-        <p id="lastModified">Last Modification:</p>
+      <img
+        src="images/boise-logo.webp"
+        alt="Boise Chamber of Commerce Logo"
+        id="footer_logo"
+      />
+      <p id="copyright"></p>
+      <p>United States of America | WDD 230 BYU-Idaho |</p>
+      <p id="lastModified">Last Modification:</p>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById('timestamp').value = Date.now();
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("timestamp").value = Date.now();
+      });
     </script>
-</body>
+  </body>
 </html>

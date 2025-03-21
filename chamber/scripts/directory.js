@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const memberElement = document.createElement('div');
             memberElement.classList.add('member');
             memberElement.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name}">
                 <h2>${member.name}</h2>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>

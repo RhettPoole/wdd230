@@ -1,67 +1,60 @@
 {
     "members": [
         {
-            "name": "Company One",
+            "name": "Boise Cascade",
             "address": "123 Main St, Boise, ID 83701",
             "phone": "208-555-1234",
-            "website": "https://www.companyone.com",
-            "image": "companyone.png",
+            "website": "https://www.bc.com/",
             "membershipLevel": "Gold",
-            "description": "Leading provider of tech solutions."
+            "description": "A manufacturer and building materials distributor, Boise Cascade is a large employer in the Treasure Valley area. Their distribution center and main offices in Boise offer career opportunities ranging from trucking to account management."
         },
         {
-            "name": "Company Two",
+            "name": "J.R. Simplot Company",
             "address": "456 Elm St, Boise, ID 83702",
             "phone": "208-555-5678",
-            "website": "https://www.companytwo.com",
-            "image": "companytwo.png",
+            "website": "http://www.simplot.com/",
             "membershipLevel": "Silver",
-            "description": "Innovative marketing agency."
+            "description": "J.R. Simplot Company is an Idaho staple, employing thousands of Idahoans. Founded by Idaho native J.R. Simplot, this food production company has helped turn the state into an agricultural powerhouse. If you’re a fan of french fries or chips, chances are good that you’ve eaten a Simplot potato. The headquarters and processing plants for J.R. Simplot are located in Boise."
         },
         {
-            "name": "Company Three",
+            "name": "Citi Corp",
             "address": "789 Oak St, Boise, ID 83703",
             "phone": "208-555-9012",
-            "website": "https://www.companythree.com",
-            "image": "companythree.png",
+            "website": "http://www.citigroup.com/",
             "membershipLevel": "Bronze",
-            "description": "Top-notch financial services."
+            "description": "Citi Corp is a multinational investment bank and financial services corporation. Their Meridian call center is a major employer in the area and is known for good benefits, a wonderful work atmosphere, and excellent workplace culture. According to reviews from employees, Citi Corp is “the best place to work,” and a “very diverse company [with] friendly people to work with.”"
         },
         {
-            "name": "Company Four",
+            "name": "Amalgamated Sugar Company",
             "address": "101 Pine St, Boise, ID 83704",
             "phone": "208-555-3456",
-            "website": "https://www.companyfour.com",
-            "image": "companyfour.png",
+            "website": "https://www.amalgamatedsugar.com/",
             "membershipLevel": "Gold",
-            "description": "Expert legal advice."
+            "description": "You'd be hard-pressed to find a sweeter gig than working for the second-largest sugar manufacturer in the U.S., where they take sugar beets farmed from more than 700 local member farms and refine them into sugar. With around 750 employees, job opportunities are diverse. The range from chemical engineers and crop consultants to warehouse managers and packaging engineers."
         },
         {
-            "name": "Company Five",
+            "name": "Micron Technology, Inc.",
             "address": "202 Maple St, Boise, ID 83705",
             "phone": "208-555-7890",
-            "website": "https://www.companyfive.com",
-            "image": "companyfive.png",
+            "website": "https://www.micron.com/",
             "membershipLevel": "Silver",
-            "description": "High-quality construction services."
+            "description": "Another big player in the technology industry, Micron is headquartered in Boise and provides jobs for thousands of Idahoans. With 17 worldwide locations, Micron is a leader in the memory and information sectors, driving innovation and research for over 40 years. What began in a Boise basement in the 1970s has blossomed into a worldwide leader in technology."
         },
         {
-            "name": "Company Six",
+            "name": "Scentsy",
             "address": "303 Birch St, Boise, ID 83706",
             "phone": "208-555-2345",
-            "website": "https://www.companysix.com",
-            "image": "companysix.png",
+            "website": "http://www.scentsy.com/",
             "membershipLevel": "Bronze",
-            "description": "Reliable IT support."
+            "description": "The wickless candle and scented wax company Scentsy is based in the Treasure Valley and has a beautiful headquarters in Meridian. Scentsy attracts top talent with promises of a fun, fulfilling work environment that puts family first and is “a little offbeat.” From marketing strategists to logistics analysts, job opportunities abound at Scentsy."
         },
         {
-            "name": "Company Seven",
+            "name": "Ataraxis",
             "address": "404 Cedar St, Boise, ID 83707",
             "phone": "208-555-6789",
-            "website": "https://www.companyseven.com",
-            "image": "companyseven.png",
+            "website": "https://www.ataraxispeo.com/",
             "membershipLevel": "Gold",
-            "description": "Creative design studio."
+            "description": "Ataraxis is a locally-owned PEO or Professional Employment Organization. As a business consulting and HR management firm, Ataraxis assists other companies with functions such as payroll, employee relations, benefits, compensation, and more."
         }
     ]
 }
