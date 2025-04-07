@@ -4,9 +4,9 @@ const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
 // API URL with query parameters
-const lat = "44.5002"; // Latitude for Boise, Idaho
-const lon = "-114.2512"; // Longitude for Boise, Idaho
-const apiKey = "843c937f1cba545b3e01493f05512f37"; // Boise API key
+const lat = "44.5002"; // Latitude for Cozumel, Mexico
+const lon = "-114.2512"; // Longitude for Cozumel, Mexico
+const apiKey = "843c937f1cba545b3e01493f05512f37"; // Cozumel, Mexico
 const units = "imperial"; // Set units to imperial
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
@@ -16,7 +16,7 @@ async function apiFetch() {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // Output the results to the console for testing
+      // console.log(data); // Output the results to the console for testing
       displayWeather(data);
     } else {
       throw new Error(await response.text());
