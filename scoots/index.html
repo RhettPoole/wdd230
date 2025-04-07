@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Scoots Cozumel - Rent scooters, ATVs, and Jeeps for your island adventure!"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/main.js"></script>
+    <title>~Scoots~ Rentals</title>
+  </head>
+  <body>
+    <header>
+      <div class="banner" id="weatherBanner"></div>
+      <h1>~Scoots~ Cozumel</h1>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Adventure Awaits!</h2>
+          <p>Rent a scooter, ATV, or Jeep and explore Cozumel your way.</p>
+          <a class="cta" href="reservations.html">Make a Reservation</a>
+        </div>
+      </section>
+      <section class="rentals-summary">
+        <h3>Our Rentals</h3>
+        <p>We offer scooters, ATVs, and Jeeps to suit every adventure style.</p>
+      </section>
+      <section id="weather" class="card">
+        <h3>Current Weather</h3>
+        <div>
+          <p>Temperature: <span id="current-temp"></span>°F</p>
+          <figure>
+            <img id="weather-icon" src="images/placeholder-weather-icon.png" alt="Weather icon" />
+            <figcaption></figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="gallery">
+        <h3>Explore Cozumel</h3>
+        <img src="images/island1.webp" alt="Beautiful beach in Cozumel" />
+        <img src="images/rental1.webp" alt="Scooter rental group" />
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 ~Scoots~</p>
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+      <a href="attributions.html">Attributions</a>
+    </footer>
+  </body>
+</html>

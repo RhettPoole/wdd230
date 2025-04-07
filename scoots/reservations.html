@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations - ~Scoots~</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/reservations.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>~Scoots~ Reservations</h1>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Rental Agreement</h2>
+      <p>
+        A $50 security deposit is required to confirm reservations. A valid
+        driver's license is required at the time of rental. No one under the age
+        of 12 is allowed to ride on the scooters. Fuel charges are not included.
+        Unlimited mileage is provided. Liability insurance is included, and
+        damage insurance is available for purchase. Free delivery to Cozumel
+        hotels or Airbnbs is available for rentals of 2+ days. Payment methods
+        include Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.
+        Rentals may be returned to either physical location.
+      </p>
+      <form class="reservation-form" id="reservationForm">
+        <label>Name: <input type="text" name="name" required /></label>
+        <label>Email: <input type="email" name="email" required /></label>
+        <label>Phone: <input type="tel" name="phone" required /></label>
+        <label>Date: <input type="date" name="date" required /></label>
+        <label
+          >Period:
+          <select name="period" required>
+            <option value="">Select Period</option>
+            <option>Half Day</option>
+            <option>Full Day</option>
+          </select>
+        </label>
+        <label
+          >Rental Type: <input type="text" name="rentalType" required
+        /></label>
+        <label
+          >Number of Rentals: <input type="number" name="quantity" min="1"
+        /></label>
+        <label>Home State/Country: <input type="text" name="location" /></label>
+        <label>Cruise Line: <input type="text" name="cruise" /></label>
+        <label
+          >Special Accommodations:<textarea name="comments"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="confirmationMessage" class="hidden">
+        Thank you! Your reservation has been submitted.
+      </p>
+    </main>
+    <footer>
+      <p>&copy; 2025 ~Scoots~</p>
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+      <a href="attributions.html">Attributions</a>
+    </footer>
+  </body>
+</html>
